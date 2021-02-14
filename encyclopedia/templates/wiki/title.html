@@ -8,7 +8,9 @@
 
 <h1>{{ title }}</h1>
     <a>
-        {{ entry }}
+        {{ entry|safe }}
     </a>
+<br>
+    <a href="/edit/{{ title }}" >Edit {{title}}</a>
 
 {% endblock %}

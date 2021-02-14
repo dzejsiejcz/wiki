@@ -5,6 +5,14 @@
 {% endblock %}
 
 {% block body %}
+
+{% if alert %}
+
+<script type="text/javascript">
+alert("Entry was not edited");
+</script>
+
+{% endif %}
     <h1>All Pages</h1>
 
     <ul>

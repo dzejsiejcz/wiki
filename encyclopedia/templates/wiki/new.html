@@ -6,6 +6,14 @@
 
 {% block body %}
 
+{% if alert %}
+
+<script type="text/javascript">
+alert("Title of entry already exists");
+</script>
+
+{% endif %}
+
 <h1>Create New Page</h1>
 
 <form action="{% url 'new_page' %}" method="POST">
@@ -13,6 +21,7 @@
     {{ form }}
       <br><br>
       <input type="submit" value="Submit">
+
 </form>
 
 {% endblock %}
